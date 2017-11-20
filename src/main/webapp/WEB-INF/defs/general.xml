@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+ <tiles-definitions>
+
+  <!--  The common template -->
+  <definition name="common" template="/WEB-INF/layouts/common.jsp">
+  	<put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+  </definition>
+  
+  <definition name="home" extends="common">
+    <put-attribute name="title" value="Ets Boukedjar" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="homepage" />
+  </definition>
+  
+  <!-- 
+  <definition name="login" extends="common">
+    <put-attribute name="title" value="login" />
+    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    <put-attribute name="current" value="login"/>
+  </definition> -->
+  
+</tiles-definitions>
